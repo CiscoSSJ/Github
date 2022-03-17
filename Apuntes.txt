@@ -30,6 +30,10 @@ git remote remove <nombre> (Elimina un repositorio al completo, tanto local como
 git tag -a <v1.0> -m "Primera versión de la app" <idcommit> (Añade un tag y)
 git tag (Muestra los tag que tenemos) 
 git show-ref --tags (Muestra los sha de los commit con sus tags (no son los mismos que los originales))
+git tag -d <v1.0> (Borra tag local)
+git push origin :refs/tags/<v1.0> (Borrar tags en GitHub)
+git show-branch --all (Muestra los datos de todas las branch que existen)
+gitk (Abre un menú gráfico donde se ve todo)
 
 
 Crear un repositorio desde la consola
