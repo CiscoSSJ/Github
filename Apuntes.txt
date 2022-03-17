@@ -1,0 +1,38 @@
+Configuración cuenta
+-----------------------------------------------------------------------------------------------------------------------
+git config --global user.name "CiscoSSJ"
+git config --global user.email cicscarande@gmail.cambios
+
+Comandos básicos
+-----------------------------------------------------------------------------------------------------------------------
+git init (Selecciona la carpeta donde vamos a trabajar)
+git add (Añade los cambios)
+git commit -m (Hace un guardado)
+git commit -am (Añade y guarda los cambios)
+git log (Muestra todos los commit)
+git checkout (Cambiar de commit)
+git status (Muestra información sobre los datos)
+git rm --cached (Borra el último git add pero no el documento)
+git rm -rf .git (Borra la carpeta .git)
+git branch <rama> (Muestra y crea las ramas)
+git show (Muestra lo que se modificó con el commit anterior)
+git diff <antiguio> <nuevo> (Muestra lo cambios entre 2 commit)
+git merche <rama> (Traer los cambios de otra rama a la rama actual)
+git remote add origin <url de tu repositorio> (Crea un repositorio remoto)
+git remote (Muestra tu repositorio remoto actual)
+git push origin <rama> (Sube tu repositorio a la nube)
+git pull [origin] [main] --alow-unrelated-histories (Si no funciona el pull lo arreglamos así) 
+git remote remove <nombre> (Elimina un repositorio al completo, tanto local como en github)
+
+
+Crear un repositorio desde la consola
+-----------------------------------------------------------------------------------------------------------------------
+Se crea de manera gráfica sin el README y sin licencia, cuando nos avise del Quick Setup empezamos con la consola
+
+echo "# <repositorio>" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/CiscoSSJ/<repositorio>.git
+git push -u origin main
