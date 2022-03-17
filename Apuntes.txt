@@ -10,6 +10,10 @@ git add (Añade los cambios)
 git commit -m (Hace un guardado)
 git commit -am (Añade y guarda los cambios)
 git log (Muestra todos los commit)
+git log --all --graph --decorate --oneline (Muestra la gráfica de los branch)
+alias ramas="git log --all --graph --decorate --oneline" (Crea un alias que al pone ramas
+En el navegador se introduce automaticamente ese comando)
+unalias ramas (Para borrarlo)
 git checkout (Cambiar de commit)
 git status (Muestra información sobre los datos)
 git rm --cached (Borra el último git add pero no el documento)
@@ -23,6 +27,9 @@ git remote (Muestra tu repositorio remoto actual)
 git push [origin] [main] (Sube tu repositorio a la nube)
 git pull [origin] [main] --alow-unrelated-histories (Si no funciona el pull lo arreglamos así) 
 git remote remove <nombre> (Elimina un repositorio al completo, tanto local como en github)
+git tag -a <v1.0> -m "Primera versión de la app" <idcommit> (Añade un tag y)
+git tag (Muestra los tag que tenemos) 
+git show-ref --tags (Muestra los sha de los commit con sus tags (no son los mismos que los originales))
 
 
 Crear un repositorio desde la consola
