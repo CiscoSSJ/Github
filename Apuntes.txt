@@ -20,7 +20,7 @@ git diff <antiguio> <nuevo> (Muestra lo cambios entre 2 commit)
 git merche <rama> (Traer los cambios de otra rama a la rama actual)
 git remote add origin <url de tu repositorio> (Crea un repositorio remoto)
 git remote (Muestra tu repositorio remoto actual)
-git push origin <rama> (Sube tu repositorio a la nube)
+git push [origin] [main] (Sube tu repositorio a la nube)
 git pull [origin] [main] --alow-unrelated-histories (Si no funciona el pull lo arreglamos así) 
 git remote remove <nombre> (Elimina un repositorio al completo, tanto local como en github)
 
