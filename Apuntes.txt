@@ -19,6 +19,7 @@ git status (Muestra información sobre los datos)
 git rm --cached (Borra el último git add pero no el documento)
 git rm -rf .git (Borra la carpeta .git)
 git branch <rama> (Muestra y crea las ramas)
+git branch -D <borra branchs>
 git show (Muestra lo que se modificó con el commit anterior)
 git diff <antiguio> <nuevo> (Muestra lo cambios entre 2 commit)
 git merche <rama> (Traer los cambios de otra rama a la rama actual)
@@ -34,6 +35,24 @@ git tag -d <v1.0> (Borra tag local)
 git push origin :refs/tags/<v1.0> (Borrar tags en GitHub)
 git show-branch --all (Muestra los datos de todas las branch que existen)
 gitk (Abre un menú gráfico donde se ve todo)
+git stash (Guarda la información actual tanto la del add como la que no y te permite moverte entre ramas y recuperarlo después)
+git stash list (Muestra información de los stashes)
+    Ejemplo: stash@{x} WorkInProgress on <branch>: <hash> <commit del que parte>
+git stash pop (Recuperas todo lo stasheado anteriormente )
+git stash branch <branch> (Cambiar stash de branch)
+git stash drop (Borrar el último stash de la lista)
+git clean -f (Borra los archivos untracked a la fuerza, exceptuando los archivos con extesión introducida en .gitignore)
+git clean --dry-run (Muestra los archivos que se van a borrar)
+git cherry-pick <commit> (Permite hacer copias de un commit específico de otra rama)
+git commit --amend  (Después de un git add <documento> puedes fusionar los cambios de ahora con el commit anterior si ha quedaod incompleto)
+git reflog (Muestra los Head enumerados junto a los commits)
+git reset --soft <commit> (Borra los datos actuales exceptuando los del staging y vuelve al commit)
+git reset --hard <commit> (Borra los datos al completo y vuelve al commit)
+git grep <filtro> (Filtrar búsquedas de palabras en documentos)
+git grep -n <filtro> (Muestra filtros por lineas de documentos)
+git log -S <"filtro"> (Filtrar búsqueda de commits)
+
+
 
 
 Crear un repositorio desde la consola
