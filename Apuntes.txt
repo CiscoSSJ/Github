@@ -35,7 +35,6 @@ git tag -d <v1.0> (Borra tag local)
 git push origin :refs/tags/<v1.0> (Borrar tags en GitHub)
 git show-branch --all (Muestra los datos de todas las branch que existen)
 gitk (Abre un menú gráfico donde se ve todo)
-<<<<<<< HEAD
 git stash (Guarda la información actual tanto la del add como la que no y te permite moverte entre ramas y recuperarlo después)
 git stash list (Muestra información de los stashes)
     Ejemplo: stash@{x} WorkInProgress on <branch>: <hash> <commit del que parte>
@@ -52,10 +51,6 @@ git reset --hard <commit> (Borra los datos al completo y vuelve al commit)
 git grep <filtro> (Filtrar búsquedas de palabras en documentos)
 git grep -n <filtro> (Muestra filtros por lineas de documentos)
 git log -S <"filtro"> (Filtrar búsqueda de commits)
-
-
-=======
->>>>>>> 097593be31ee2d021b686628c63b99b027ea4757
 
 
 Crear un repositorio desde la consola
