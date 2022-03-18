@@ -20,6 +20,7 @@ git rm --cached (Borra el último git add pero no el documento)
 git rm -rf .git (Borra la carpeta .git)
 git branch <rama> (Muestra y crea las ramas)
 git branch -D <borra branchs>
+git branch -a (Muestra las ramas remotas y locales)
 git show (Muestra lo que se modificó con el commit anterior)
 git diff <antiguio> <nuevo> (Muestra lo cambios entre 2 commit)
 git merche <rama> (Traer los cambios de otra rama a la rama actual)
@@ -51,6 +52,14 @@ git reset --hard <commit> (Borra los datos al completo y vuelve al commit)
 git grep <filtro> (Filtrar búsquedas de palabras en documentos)
 git grep -n <filtro> (Muestra filtros por lineas de documentos)
 git log -S <"filtro"> (Filtrar búsqueda de commits)
+git shortlog -sn (Muestra el numero de commits de los colaboradores)
+git config --global alias.<alias> "comando" (Crea un alias de git para el usuario local)
+git blame -c <documento> (Muestra los últimos cambios de los usuarios línea a línea)
+    Añadiendo   -Lx,x    muestra las líneas en concreto
+
+
+
+
 
 
 Crear un repositorio desde la consola
