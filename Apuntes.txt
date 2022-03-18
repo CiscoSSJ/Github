@@ -1,0 +1,71 @@
+Configuración cuenta
+-----------------------------------------------------------------------------------------------------------------------
+git config --global user.name "CiscoSSJ"
+git config --global user.email cicscarande@gmail.cambios
+
+Comandos básicos
+-----------------------------------------------------------------------------------------------------------------------
+git init (Selecciona la carpeta donde vamos a trabajar)
+git add (Añade los cambios)
+git commit -m (Hace un guardado)
+git commit -am (Añade y guarda los cambios)
+git log (Muestra todos los commit)
+git log --all --graph --decorate --oneline (Muestra la gráfica de los branch)
+alias ramas="git log --all --graph --decorate --oneline" (Crea un alias que al pone ramas
+En el navegador se introduce automaticamente ese comando)
+unalias ramas (Para borrarlo)
+git checkout (Cambiar de commit)
+git status (Muestra información sobre los datos)
+git rm --cached (Borra el último git add pero no el documento)
+git rm -rf .git (Borra la carpeta .git)
+git branch <rama> (Muestra y crea las ramas)
+git branch -D <borra branchs>
+git show (Muestra lo que se modificó con el commit anterior)
+git diff <antiguio> <nuevo> (Muestra lo cambios entre 2 commit)
+git merche <rama> (Traer los cambios de otra rama a la rama actual)
+git remote add origin <url de tu repositorio> (Crea un repositorio remoto)
+git remote (Muestra tu repositorio remoto actual)
+git push [origin] [main] (Sube tu repositorio a la nube)
+git pull [origin] [main] --alow-unrelated-histories (Si no funciona el pull lo arreglamos así) 
+git remote remove <nombre> (Elimina un repositorio al completo, tanto local como en github)
+git tag -a <v1.0> -m "Primera versión de la app" <idcommit> (Añade un tag y)
+git tag (Muestra los tag que tenemos) 
+git show-ref --tags (Muestra los sha de los commit con sus tags (no son los mismos que los originales))
+git tag -d <v1.0> (Borra tag local)
+git push origin :refs/tags/<v1.0> (Borrar tags en GitHub)
+git show-branch --all (Muestra los datos de todas las branch que existen)
+gitk (Abre un menú gráfico donde se ve todo)
+<<<<<<< HEAD
+git stash (Guarda la información actual tanto la del add como la que no y te permite moverte entre ramas y recuperarlo después)
+git stash list (Muestra información de los stashes)
+    Ejemplo: stash@{x} WorkInProgress on <branch>: <hash> <commit del que parte>
+git stash pop (Recuperas todo lo stasheado anteriormente )
+git stash branch <branch> (Cambiar stash de branch)
+git stash drop (Borrar el último stash de la lista)
+git clean -f (Borra los archivos untracked a la fuerza, exceptuando los archivos con extesión introducida en .gitignore)
+git clean --dry-run (Muestra los archivos que se van a borrar)
+git cherry-pick <commit> (Permite hacer copias de un commit específico de otra rama)
+git commit --amend  (Después de un git add <documento> puedes fusionar los cambios de ahora con el commit anterior si ha quedaod incompleto)
+git reflog (Muestra los Head enumerados junto a los commits)
+git reset --soft <commit> (Borra los datos actuales exceptuando los del staging y vuelve al commit)
+git reset --hard <commit> (Borra los datos al completo y vuelve al commit)
+git grep <filtro> (Filtrar búsquedas de palabras en documentos)
+git grep -n <filtro> (Muestra filtros por lineas de documentos)
+git log -S <"filtro"> (Filtrar búsqueda de commits)
+
+
+=======
+>>>>>>> 097593be31ee2d021b686628c63b99b027ea4757
+
+
+Crear un repositorio desde la consola
+-----------------------------------------------------------------------------------------------------------------------
+Se crea de manera gráfica sin el README y sin licencia, cuando nos avise del Quick Setup empezamos con la consola
+
+echo "# <repositorio>" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/CiscoSSJ/<repositorio>.git
+git push -u origin main
